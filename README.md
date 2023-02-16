@@ -36,15 +36,16 @@ We can check each switch's value by changing them and printing the result direct
 Our result is the decimal conversion of a binary number where 1 is "switch on" and 0 is \"switch off\". \
 For example, by turning on the 4th switch, we get a reading of \"8\", corresponding to sequence `0000001000`.
 
+![Switch_value](https://github.com/federaspa/Reflex-game/blob/main/Images/Switch%20value.png)
+
 ## Building the display table
 
-We first tried to create the binary combination corresponding to a scheme we were given. We then noticed that it didn't light up the
+We first tried to create the binary combination corresponding to a default scheme (on the left). We then noticed that it didn't light up the
 segments we wanted. After checking the actual disposition
 in our board (considering the element in the first position as \"0\" in
-the scheme, the second as \"1\", ecc..), we built the new scheme in Fig.
+the scheme, the second as \"1\", ecc..), we built the new scheme (on the right).
 
-[The new reference table working in our case. In the left we can see the
-old version and in the right the new one]
+![Schema](https://github.com/federaspa/Reflex-game/blob/main/Images/schema.png)
 
 Furthermore we noticed that to turn on a segment of the BCD display the
 binary squence needed to be inverted (for example, to have an \"8\" we
@@ -73,8 +74,11 @@ We build two look up tables:
 * The first one contains the hexadecimal congiguration for digit `i` at the `i`th position.
 * The second one contains the addresses of the 7-segment display
 
-The result of our code (which also proves our 7-segment display LUT
-working) is shown in Fig. [3]\
+The result of our code also proves our 7-segment display LUT
+working.
+
+<img src="https://github.com/federaspa/Reflex-game/blob/main/Images/res.jpeg" width=50%>
+
 Defining our counter this way allowed us to reuse it with minimum
 changes in the following exercises in order to display any number on the
 7 segments display.
@@ -89,7 +93,9 @@ We start by writing a code that:
 This switch configuration will be used to program the waiting time in the main loop (the more switches the user lifts, the longer the maximum waiting time is).
 
 Our code displays the button pressed on the 7 segments display, and the
-LEDs light up based on the corresponding switch's position 
+LEDs light up based on the corresponding switch's position .
+
+![switch_button](https://github.com/federaspa/Reflex-game/blob/main/Images/button%20press%20switch.jpeg)
 
 # Reflex game
 
@@ -116,7 +122,9 @@ It will incude the following features:
 
 -   By pressing button 3, the display is reset.
 
-Below are displayed some recordings of a playtest:
+Below are displayed some recordings of a playtest and an image of the displayed result:
+
+![final](https://github.com/federaspa/Reflex-game/blob/main/Images/display%20dash.jpeg)
 
 | Time (s,ms) 	| Trial 1 	| Trial 2 	| Trial 3 	| Trial 4 	| Trial 5 	|
 |:-----------:	|:-------:	|:-------:	|:-------:	|:-------:	|:-------:	|
