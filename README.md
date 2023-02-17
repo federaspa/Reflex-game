@@ -77,7 +77,7 @@ We build two look up tables:
 The result of our code also proves our 7-segment display LUT
 working.
 
-<img src="https://github.com/federaspa/Reflex-game/blob/main/Images/res.jpeg" width=50%>
+
 
 Defining our counter this way allowed us to reuse it with minimum
 changes in the following exercises in order to display any number on the
@@ -95,7 +95,6 @@ This switch configuration will be used to program the waiting time in the main l
 Our code displays the button pressed on the 7 segments display, and the
 LEDs light up based on the corresponding switch's position .
 
-![switch_button](https://github.com/federaspa/Reflex-game/blob/main/Images/button%20press%20switch.jpeg)
 
 # Reflex game
 
@@ -124,7 +123,7 @@ It will incude the following features:
 
 Below are displayed some recordings of a playtest and an image of the displayed result:
 
-![final](https://github.com/federaspa/Reflex-game/blob/main/Images/display%20dash.jpeg)
+<img src="https://github.com/federaspa/Reflex-game/blob/main/Images/display%20dash.jpeg" width=50%>
 
 | Time (s,ms) 	| Trial 1 	| Trial 2 	| Trial 3 	| Trial 4 	| Trial 5 	|
 |:-----------:	|:-------:	|:-------:	|:-------:	|:-------:	|:-------:	|
