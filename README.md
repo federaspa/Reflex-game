@@ -1,3 +1,7 @@
+# Reflex game
+
+This project attempts to program a reflex testing game on a DE10-SoC board using the Eclipse IDE
+
 # Management of peripherals 
 
 ## Peripherals available
